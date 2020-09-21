@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_name">Calorie Tracker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation </string>
+    <string name="action_settings">Settings</string>
+
+
+
+
+    <string-array name="activty_level">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="calories">
+
+        <item>100</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+    </string-array>
+
+    <string-array name="food_category">
+
+        <item>Drink</item>
+        <item>Meal</item>
+        <item>Meat</item>
+        <item>Snack</item>
+        <item>Cake</item>
+        <item>Fruit</item>
+        <item>Vegies</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="food_name"></string-array>
+</resources>

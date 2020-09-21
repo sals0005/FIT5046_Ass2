@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        android:text="Please Select One graph to show:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+    android:id="@+id/btnPie"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:textAllCaps="false"
+    android:textSize="18sp"
+        android:layout_below="@+id/tv_name"
+        android:text="Pie Chart"/>
+
+    <Button
+        android:id="@+id/btnBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Bar Chart"/>
+</RelativeLayout>

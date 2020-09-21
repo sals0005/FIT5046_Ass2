@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="40dp">
+
+
+
+<TextView
+    android:id="@+id/welcome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:textColor="@color/colorPrimaryDark" />
+
+<TextView
+    android:id="@+id/versionText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:layout_below="@+id/welcome"
+    android:text="Calorie Tracker"
+    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+<TextView
+    android:id="@+id/dateText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:layout_below="@+id/versionText"
+    />
+
+<TextView
+    android:id="@+id/tvResult"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:layout_below="@+id/dateText"/>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:layout_below="@+id/tvResult"
+        android:src="@mipmap/health"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:gravity="center"
+        android:id="@+id/tvCalroi"/>
+
+    <Spinner
+        android:id="@+id/calorigoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCalroi"
+        android:entries="@array/calories"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+tools:context=".PieChartActivity">
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dataPicker"
+    android:ems="10"
+    android:gravity="center"
+    tools:layout_editor_absoluteX="98dp"
+    tools:layout_editor_absoluteY="231dp"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dataPicker"
+        android:id="@+id/btnPic"
+        android:gravity="center"
+        android:text="Generate Graph"/>
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+</RelativeLayout>

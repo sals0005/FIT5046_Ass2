@@ -1,0 +1,121 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeButton"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/tvWelecome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Please choose a food Category "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Spinner
+        android:id="@+id/food_catgory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelecome"
+        android:entries="@array/food_category"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_catgory"
+        android:entries="@array/food_name"
+
+        />
+
+    <TextView
+        android:id="@+id/tvaddFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/food_name"
+        android:text="Please Enter the food details if it's not in the above menus "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <EditText
+    android:id="@+id/edFood"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvaddFood"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+        android:ems="10"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="231dp"
+    />
+
+    <Button
+        android:id="@+id/btnfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edFood"
+        android:text="Search for the Food"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvfoodName"
+        android:layout_below="@id/btnfood"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvru"
+        android:layout_below="@id/tvfoodName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCalorie"
+        android:layout_below="@id/tvru"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFat"
+        android:layout_below="@id/tvCalorie"/>
+
+    <Button
+        android:id="@+id/btnFoodinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFat"
+        android:text="Search for the Food more inofrmation"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:layout_below="@id/btnFoodinfo" />
+
+    <Button
+        android:id="@+id/btnFoodImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResult"
+        android:text="Search for the Food iamge"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageFood"
+        android:layout_below="@id/btnFoodImage"/>
+</RelativeLayout>
